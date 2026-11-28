@@ -1,10 +1,24 @@
 DAY-1(27-11-2026) : learned about digital forensics 5 phases[openLearn](identification,collection,preservation,analyzing,document),
                     cloudSEK(6 phases) ,types of digital forensics, basic python(revising)
 
-openlearn :Identification: find and list all possible sources of evidence (devices, cloud accounts, removable media) and secure the scene.
-Preservation: stop changes or loss using isolation, write blockers and hashing. This happens before and during collection.
-Collection: photograph the scene and make forensic images of the evidence, and maintain chain of custody.
-Analysis: examine the copies to find information relevant to the investigation.
-Documentation and reporting: record every step throughout the case, then present the findings in a clear report, and in court if needed.
+    openlearn :Identification: find and list all possible sources of evidence (devices, cloud accounts, removable media) and secure the scene.
+    Preservation: stop changes or loss using isolation, write blockers and hashing. This happens before and during collection.
+    Collection: photograph the scene and make forensic images of the evidence, and maintain chain of custody.
+    Analysis: examine the copies to find information relevant to the investigation.
+    Documentation and reporting: record every step throughout the case, then present the findings in a clear report, and in court if needed.
 
-                    
+DAY-2(28-11-2026) :Hashing and integrity
+    
+     A hash function turns a file of any size into a fixed-length fingerprint. Even a one-character change produces a completely different hash. 
+     It is one-way, so the file can't be recovered from the hash, and it is not encryption.
+     In forensics, the hash is recorded when evidence is collected. Later, the hash is recomputed and compared.
+     A match proves the evidence is unchanged. A mismatch means it has been altered or corrupted and can't be trusted until explained.
+          
+     Lab: I hashed evidence.txt with sha256sum, saved the hash to evidence.sha256, and verified with sha256sum -c. 
+     The result was OK. After running echo "tampered" >> evidence.txt, the check returned FAILED.
+     Note: MD5 (md5sum) is older and weaker than SHA-256, but still seen in many reports.
+  
+  Linux ping test
+     sucessfully pinged to metaspolitable (msf)
+    changed the adapter of msf from nat to host only becouse msf has so many vulnerabilities so if i used nat the attackers can make an intrution through it and attack
+    via network.
