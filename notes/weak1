@@ -1,1 +1,10 @@
+DAY-1(27-11-2026) : learned about digital forensics 5 phases[openLearn](identification,collection,preservation,analyzing,document),
+                    cloudSEK(6 phases) ,types of digital forensics, basic python(revising)
 
+openlearn :Identification: find and list all possible sources of evidence (devices, cloud accounts, removable media) and secure the scene.
+Preservation: stop changes or loss using isolation, write blockers and hashing. This happens before and during collection.
+Collection: photograph the scene and make forensic images of the evidence, and maintain chain of custody.
+Analysis: examine the copies to find information relevant to the investigation.
+Documentation and reporting: record every step throughout the case, then present the findings in a clear report, and in court if needed.
+
+                    
